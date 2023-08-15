@@ -1,15 +1,24 @@
 # Blockchain-Scanner
 This script is designed to monitor and process transaction events from the Uniswap V2 smart contracts on the Ethereum blockchain. It connects to the blockchain using the WebSocket protocol, fetches transaction data from Etherscan, and provides detailed logs of certain transactions.
 
-Features
+# Features
 Web3 Connection: Establishes a connection to the Ethereum blockchain using the Web3.py library.
+
 WebSocket Listener: Listens to PairCreated events from the Uniswap V2 Factory contract.
+
 Backward Filters: Validates the transactions based on multiple conditions such as the amount of initial ETH liquidity, prior removal of liquidity, and contract verification.
+
 Transaction History Checker: Retrieves a comprehensive list of previous transactions for the given address.
-Prerequisites
+
+# Prerequisites
+
 Python 3.x
-Required Python libraries: websockets, asyncio, web3, aiohttp, orjson, collections
-Setup
+Required Python libraries:
+
+websockets, asyncio, web3, aiohttp, orjson, collections
+
+# Setup
+
 Install the required packages:
 
 Python
